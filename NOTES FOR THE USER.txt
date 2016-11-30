@@ -1,0 +1,12 @@
+To view the actual working website
+1) Copy files in 'wamp64/www/final' folder 
+2) Change .env database to match the one in the actual database
+3) Create a new database in phpmyAdmin with the same name as the one in .env
+4) From CMD add the command >php artisan migrate
+5) From CMD add the command >php artisan db:seed --class=MoviesTableSeeder
+
+To get data from the database
+'fetchDataFromDB.php' file is a short sample piece of code that will fetch data from the database.
+
+To use the custom command that deletes the Movie with title "test2":
+- From CMD add the command >php artisan custom:command (This should be similar to the cron job that is supposed to automatically update the database)
